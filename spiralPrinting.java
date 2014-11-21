@@ -18,14 +18,14 @@ public class Main {
 	            String[] lineArray = line.split(";");
 	            
 	            if (lineArray.length == 3  ) {
-	            	System.out.println(checkNumber(lineArray));
+	            	System.out.println(SpiralPrint(lineArray));
 	            } 
 	        }
 	    } catch (IOException e) {
 	        System.out.println("File Read Error: " + e.getMessage());
 	    }               
 	}
-	public static String checkNumber(String[] sent){
+	public static String SpiralPrint(String[] sent){
 		
 		int n=Integer.parseInt(sent[0]);
 		int m=Integer.parseInt(sent[1]);
